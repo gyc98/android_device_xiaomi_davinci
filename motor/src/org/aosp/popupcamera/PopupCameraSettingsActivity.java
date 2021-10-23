@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.popupcamera;
+package org.aosp.popupcamera;
 
 import android.os.Bundle;
 

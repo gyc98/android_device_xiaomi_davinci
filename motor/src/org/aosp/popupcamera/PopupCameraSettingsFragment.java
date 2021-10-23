@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package org.lineageos.popupcamera;
+package org.aosp.popupcamera;
+
+import org.aosp.popupcamera.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -26,8 +28,6 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference.OnPreferenceClickListener;
 import androidx.preference.PreferenceFragment;
-
-import org.lineageos.popupcamera.R;
 
 public class PopupCameraSettingsFragment extends PreferenceFragment
         implements OnPreferenceChangeListener, OnPreferenceClickListener {

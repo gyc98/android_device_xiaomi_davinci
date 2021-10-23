@@ -14,7 +14,10 @@
  * limitations under the License.
  */
 
-package org.lineageos.popupcamera;
+package org.aosp.popupcamera;
+
+import org.aosp.popupcamera.R;
+import org.aosp.popupcamera.utils.FileUtils;
 
 import android.annotation.NonNull;
 import android.app.AlertDialog;
@@ -37,10 +40,6 @@ import android.os.SystemClock;
 import android.os.UserHandle;
 import android.util.Log;
 import android.view.WindowManager;
-
-import org.lineageos.popupcamera.R;
-import org.lineageos.popupcamera.utils.FileUtils;
-
 import vendor.xiaomi.hardware.motor.V1_0.IMotor;
 import vendor.xiaomi.hardware.motor.V1_0.IMotorCallback;
 import vendor.xiaomi.hardware.motor.V1_0.MotorEvent;
