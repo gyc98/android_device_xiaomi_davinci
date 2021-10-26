@@ -55,7 +55,8 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.davinci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.davinci.rc
+    $(LOCAL_PATH)/rootdir/etc/init.davinci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.davinci.rc \
+    $(LOCAL_PATH)/rootdir/etc/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -108,3 +109,10 @@ PRODUCT_PACKAGES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/davinci/davinci-vendor.mk)
+
+# IFAA manager
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
